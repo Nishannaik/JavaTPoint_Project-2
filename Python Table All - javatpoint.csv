@@ -1,0 +1,83 @@
+﻿Field1,Field2,Field3,Field4,Field5
+True,False,None,and,as
+asset,def,class,continue,break
+raise,try,or,return,pass
+global,for,if,from,import
+else,finally,elif,del,except
+nonlocal,in,not,is,lambda
+,,,,
+Numbers( can be both positive and negative) with no fractional part.eg: 100,Integers of unlimited size followed by lowercase or uppercase L eg: 87032845L,Real numbers with both integer and fractional part eg: -26.2,In the form of a+bj where a forms the real part and b forms the imaginary part of the complex number. eg: 3.14j,
++ (Addition),"It is used to add two operands. For example, if a = 20, b = 10 => a+b = 30",,,
+,,,,
+* (Multiplication),"It is used to multiply one operand with the other. For example, if a = 20, b = 10 => a * b = 200",,,
+% (reminder),"It returns the reminder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a%b = 0",,,
+- (Subtraction),"It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 10 => a - b = 10",,,
+/ (divide),"It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a/b = 2.0",,,
+** (Exponent),It is an exponent operator represented as it calculates the first operand power to the second operand.,,,
+// (Floor division),It gives the floor value of the quotient produced by dividing the two operands.,,,
+,,,,
+,,,,
+If Statement ,"The if statement is used to test a specific condition. If the condition is true, a block of code (if-block) will be executed.",,,
+If - else Statement,"The if-else statement is similar to if statement except the fact that, it also provides the block of the code for the false case of the condition to be checked. If the condition provided in the if statement is false, then the else statement will be executed. ",,,
+Nested if Statement,Nested if statements enable us to use if ? else statement inside an outer if statement. ,,,
+,,,,
+while loop ,The while loop is to be used in the scenario where we don't know the number of iterations in advance. The block of statements is executed in the while loop until the condition specified in the while loop is satisfied. It is also called a pre-tested loop.,,,
+for loop ,The for loop is used in the case where we need to execute some part of the code until the given condition is satisfied. The for loop is also called as a per-tested loop. It is better to use for loop if the number of iteration is known in advance.,,,
+do-while loop,The do-while loop continues until a given condition satisfies. It is also called post tested loop. It is used when it is necessary to execute the loop at least once (mostly menu driven programs).,,,
+,,,,
+[],It is known as slice operator. It is used to access the sub-strings of a particular string. ,,,
+[:],It is known as range slice operator. It is used to access the characters from the specified range. ,,,
+in,It is known as membership operator. It returns if a particular sub-string is present in the specified string. ,,,
+not in ,It is also a membership operator and does the exact reverse of in. It returns true if a particular substring is not present in the specified string. ,,,
+*,It is known as repetition operator. It concatenates the multiple copies of the same string. ,,,
++,It is known as concatenation operator used to join the strings given either side of the operator. ,,,
+r/R,"It is used to specify the raw string. Raw strings are used in the cases where we need to print the actual meaning of escape characters such as ""C://python"". To define any string as a raw string, the character r or R is followed by the string. ",,,
+%,It is used to perform string formatting. It makes use of the format specifiers used in C programming like %d or %f to map their values in python. We will discuss how formatting is done in python. ,,,
+,,,,
+Membership,It returns true if a particular item exists in a particular list otherwise false.,print(2 in l1) prints True. ,,
+Iteration ,The for loop is used to iterate over the list elements.,"for i in l1: 
+    print(i)
+Output
+1
+2
+3
+4",,
+Repetition ,The repetition operator enables the list elements to be repeated multiple times.,"L1*2 = [1, 2, 3, 4, 1, 2, 3, 4]",,
+Concatenation ,It concatenates the list mentioned on either side of the operator.,"l1+l2 = [1, 2, 3, 4, 5, 6, 7, 8]",,
+Length,It is used to get the length of the list,len(l1) = 4 ,,
+,,,,
+Membership,It returns true if a particular item exists in the tuple otherwise false,print (2 in T1) prints True.,,
+Concatenation,It concatenates the tuple mentioned on either side of the operator.,"T1+T2 = (1, 2, 3, 4, 5, 6, 7, 8, 9)",,
+Iteration,The for loop is used to iterate over the tuple elements.,"for i in T1: 
+    print(i)
+Output
+1
+2
+3
+4
+5",,
+Repetition,The repetition operator enables the tuple elements to be repeated multiple times.,"T1*2 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)",,
+Length,It is used to get the length of the tuple.,len(T1) = 5,,
+,,,,
+3,copy(),It returns a shallow copy of the set. ,,
+4,difference_update(....),It modifies this set by removing all the items that are also present in the specified sets. ,,
+5,discard(item),It removes the specified item from the set. ,,
+6,intersection(),It returns a new set that contains only the common elements of both the sets. (all the sets if more than two are specified). ,,
+1,add(item),It adds an item to the set. It has no effect if the item is already present in the set. ,,
+2,clear(),It deletes all the items from the set. ,,
+7,intersection_update(....),It removes the items from the original set that are not present in both the sets (all the sets if more than one are specified).,,
+8,Isdisjoint(....),Return True if two sets have a null intersection.,,
+9,Issubset(....),Report whether another set contains this set.,,
+10,Issuperset(....),Report whether this set contains another set.,,
+13,symmetric_difference(....),"Remove an element from a set; it must be a member. If the element is not a member, raise a KeyError.",,
+12,remove(item),"Remove an element from a set; it must be a member. If the element is not a member, raise a KeyError.",,
+14,symmetric_difference_update(....),Update a set with the symmetric difference of itself and another.,,
+15,union(....),"Return the union of sets as a new set.
+(i.e. all elements that are in either set.)",,
+11,pop(),Remove and return an arbitrary set element that is the last element of the set. Raises KeyError if the set is empty.,,
+16,update(),Update a set with the union of itself and others.,,
+,,,,
+3,str(dict),It converts the dictionary into the printable string representation.,,
+2,len(dict),It is used to calculate the length of the dictionary.,,
+1,"cmp(dict1, dict2)","It compares the items of both the dictionary and returns true if the first dictionary values are greater than the second dictionary, otherwise it returns false.",,
+4,type(variable),It is used to print the type of the passed variable.,,
